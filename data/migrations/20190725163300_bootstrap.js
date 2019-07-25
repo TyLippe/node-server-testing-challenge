@@ -1,5 +1,5 @@
 exports.up = function (knex, Promise) {
-    return knex.schema.createTable('OW_Heroes', tbl => {
+    return knex.schema.createTable('heroes', tbl => {
         tbl.increments();
 
         tbl.string('name', 255).notNullable();
